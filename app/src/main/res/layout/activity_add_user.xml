@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AddUserForm"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/header"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/form_ll"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ID:"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="First Name :"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Last Name"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Date Of Birth :"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Gender :"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Contact No. :"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:id="@+id/u_id"
+
+                />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:id="@+id/fname"
+                />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                 android:id="@+id/lname"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="date"
+                android:hint="31/8/2015"
+                android:id="@+id/birthDate"
+                />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/gender"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="Male"
+                        android:layout_weight="1"
+                        android:id="@+id/male"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="Female"
+                        android:layout_weight="1"
+                        android:id="@+id/female"/>
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="phone"
+                android:id="@+id/mNumber"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form_ll"
+        android:text="SAVE"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/save"/>
+</RelativeLayout>
